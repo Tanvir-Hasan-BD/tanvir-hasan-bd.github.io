@@ -1,2108 +1,2251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="google-site-verification"
+    content="yA-_8_cZ_mlbxBh-EHfT0LgAbV89SagtjQqTTqyaM1o"
+  >
+
+  <title>
+    Masum Tech | Md Raqibul Islam Masum - Flutter App Developer & Website Designer
+  </title>
+
+  <meta
+    name="description"
+    content="Masum Tech by Md Raqibul Islam Masum offers Flutter Android app development, website design, POS sales software, landing pages, business inventory software, Excel reports, Google Sheet reports, technical support, and Masum Smart Calculator Pro, now available on Google Play."
+  >
+
+  <meta
+    name="keywords"
+    content="Masum Tech, Md Raqibul Islam Masum, Masum Flutter App Developer, Masum Website Designer, Masum POS Software Builder, Masum Technical Support Bangladesh, Flutter App Developer Bangladesh, Website Designer Bangladesh, POS Sales System, Landing Page Design, Business Inventory Software, Excel Reporting, Google Sheet Reports, Masum Smart Calculator Pro, Google Play Calculator App, Flutter Android App, Technical Support Bangladesh"
+  >
+
+  <meta name="author" content="Md Raqibul Islam Masum">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f8fbff">
+
+  <link
+    rel="canonical"
+    href="https://masumtechdev.github.io/portfolio/"
+  >
+
+  <meta
+    property="og:title"
+    content="Masum Tech | Md Raqibul Islam Masum"
+  >
+
+  <meta
+    property="og:description"
+    content="Flutter apps, websites, business software, client portfolio websites, Excel/Google Sheet reports and technical support."
+  >
+
+  <meta
+    property="og:url"
+    content="https://masumtechdev.github.io/portfolio/"
+  >
+
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:image"
+    content="https://masumtechdev.github.io/portfolio/profile.jpeg"
+  >
+
+  <meta property="og:site_name" content="Masum Tech">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Masum Tech | Md Raqibul Islam Masum"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Flutter App Developer, Website Designer, Business Software Builder and Technical Support Specialist."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://masumtechdev.github.io/portfolio/profile.jpeg"
+  >
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="favicon-32x32.png"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-J15NSN0JDG"
+  ></script>
 
-<title>Tanvir Hasan — Android App Developer & Tech Creator</title>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-<meta name="description"
-content="Tanvir Hasan is an Android App Developer, Excel enthusiast and Tech Creator from Bangladesh. Explore his apps, projects and technology platform TechDeskBD.">
-
-<style>
-
-/* =========================================================
-   CORE
-========================================================= */
-
-:root{
-    --bg:#070b10;
-    --bg-soft:#0b1118;
-    --card:#0e151d;
-    --card-light:#121c25;
-    --text:#f5f7f9;
-    --muted:#8e9aa6;
-    --line:rgba(255,255,255,.08);
-    --accent:#19d3aa;
-    --accent-dark:#0eaa89;
-    --white:#ffffff;
-    --radius:22px;
-    --max:1160px;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:
-        radial-gradient(circle at 85% 5%,rgba(25,211,170,.10),transparent 25%),
-        radial-gradient(circle at 5% 35%,rgba(25,211,170,.05),transparent 25%),
-        var(--bg);
-
-    color:var(--text);
-
-    font-family:
-        Inter,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Arial,
-        sans-serif;
-
-    line-height:1.6;
-}
-
-body::-webkit-scrollbar{
-    width:8px;
-}
-
-body::-webkit-scrollbar-track{
-    background:#070b10;
-}
-
-body::-webkit-scrollbar-thumb{
-    background:#1b3430;
-    border-radius:20px;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-.container{
-    width:min(var(--max),92%);
-    margin:auto;
-}
-
-section{
-    padding:110px 0;
-}
-
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:1000;
-
-    background:rgba(7,11,16,.72);
-    backdrop-filter:blur(20px);
-    -webkit-backdrop-filter:blur(20px);
-
-    border-bottom:1px solid rgba(255,255,255,.05);
-}
-
-.nav{
-    height:78px;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.brand{
-    font-size:20px;
-    font-weight:800;
-    letter-spacing:-.5px;
-}
-
-.brand span{
-    color:var(--accent);
-}
-
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:30px;
-}
-
-.nav-links a{
-    color:#a7b1ba;
-    font-size:13px;
-    transition:.25s;
-}
-
-.nav-links a:hover{
-    color:var(--accent);
-}
-
-.nav-cta{
-    padding:10px 17px;
-    border:1px solid rgba(25,211,170,.35);
-    border-radius:30px;
-    color:var(--accent)!important;
-}
-
-.menu{
-    display:none;
-    font-size:25px;
-    cursor:pointer;
-}
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
-.hero{
-    min-height:100vh;
-    padding-top:140px;
-
-    display:flex;
-    align-items:center;
-}
-
-.hero-grid{
-    display:grid;
-    grid-template-columns:1.15fr .85fr;
-    gap:70px;
-    align-items:center;
-}
-
-.badge{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-
-    padding:7px 13px;
-
-    border:1px solid rgba(25,211,170,.2);
-    background:rgba(25,211,170,.07);
-
-    border-radius:50px;
-
-    color:var(--accent);
-    font-size:12px;
-    font-weight:700;
-
-    margin-bottom:24px;
-}
-
-.badge-dot{
-    width:7px;
-    height:7px;
-    background:var(--accent);
-    border-radius:50%;
-    box-shadow:0 0 14px var(--accent);
-}
-
-.hero h1{
-    font-size:clamp(48px,7vw,78px);
-    line-height:.98;
-    letter-spacing:-4px;
-    max-width:760px;
-}
-
-.hero h1 span{
-    color:var(--accent);
-}
-
-.hero-role{
-    font-size:20px;
-    color:#cbd3d9;
-    margin-top:23px;
-}
-
-.hero-text{
-    color:var(--muted);
-    font-size:16px;
-    max-width:650px;
-    margin-top:17px;
-}
-
-.hero-buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    margin-top:31px;
-}
-
-.btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-
-    padding:13px 20px;
-
-    border-radius:11px;
-
-    font-size:13px;
-    font-weight:750;
-
-    transition:.25s;
-}
-
-.btn-primary{
-    color:#04100d;
-    background:var(--accent);
-}
-
-.btn-primary:hover{
-    transform:translateY(-2px);
-    box-shadow:0 15px 35px rgba(25,211,170,.18);
-}
-
-.btn-outline{
-    color:#d9e0e5;
-    background:rgba(255,255,255,.025);
-    border:1px solid var(--line);
-}
-
-.btn-outline:hover{
-    border-color:rgba(25,211,170,.4);
-    color:var(--accent);
-}
-
-
-/* =========================================================
-   HERO PHOTO
-========================================================= */
-
-.hero-photo{
-    display:flex;
-    justify-content:center;
-}
-
-.photo-wrap{
-    width:350px;
-    height:420px;
-    position:relative;
-}
-
-.photo-box{
-    position:absolute;
-    inset:20px;
-
-    overflow:hidden;
-
-    border-radius:30px;
-
-    background:
-        linear-gradient(145deg,
-        rgba(25,211,170,.14),
-        rgba(255,255,255,.02));
-
-    border:1px solid rgba(25,211,170,.18);
-
-    box-shadow:
-        0 30px 90px rgba(0,0,0,.5);
-}
-
-.photo-box img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.photo-glow{
-    position:absolute;
-
-    width:220px;
-    height:220px;
-
-    right:-50px;
-    bottom:-50px;
-
-    background:var(--accent);
-    opacity:.12;
-    filter:blur(90px);
-}
-
-.photo-tag{
-    position:absolute;
-
-    padding:13px 16px;
-
-    background:rgba(10,17,23,.92);
-
-    border:1px solid var(--line);
-    border-radius:14px;
-
-    box-shadow:0 20px 50px rgba(0,0,0,.35);
-
-    font-size:12px;
-}
-
-.photo-tag strong{
-    display:block;
-    color:var(--accent);
-    font-size:16px;
-}
-
-.tag-left{
-    left:-25px;
-    top:70px;
-}
-
-.tag-right{
-    right:-25px;
-    bottom:65px;
-}
-
-
-/* =========================================================
-   SECTION HEADER
-========================================================= */
-
-.section-top{
-    margin-bottom:45px;
-}
-
-.label{
-    color:var(--accent);
-    font-size:11px;
-    font-weight:800;
-    letter-spacing:2.5px;
-    text-transform:uppercase;
-    margin-bottom:10px;
-}
-
-.section-top h2{
-    font-size:clamp(34px,5vw,51px);
-    line-height:1.05;
-    letter-spacing:-2px;
-}
-
-.section-top p{
-    color:var(--muted);
-    max-width:650px;
-    margin-top:14px;
-}
-
-
-/* =========================================================
-   ABOUT
-========================================================= */
-
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
-}
-
-.about-card{
-    padding:34px;
-
-    background:linear-gradient(
-        145deg,
-        rgba(255,255,255,.035),
-        rgba(255,255,255,.012)
-    );
-
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-}
-
-.about-card h3{
-    font-size:21px;
-    margin-bottom:13px;
-}
-
-.about-card p{
-    color:var(--muted);
-    font-size:15px;
-}
-
-.about-list{
-    margin-top:22px;
-    display:grid;
-    gap:12px;
-}
-
-.about-item{
-    display:flex;
-    align-items:center;
-    gap:12px;
-
-    color:#cbd3d9;
-    font-size:14px;
-}
-
-.about-item span{
-    color:var(--accent);
-}
-
-
-/* =========================================================
-   SERVICES
-========================================================= */
-
-.services{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-}
-
-.service{
-    padding:28px;
-
-    background:var(--card);
-
-    border:1px solid var(--line);
-    border-radius:20px;
-
-    transition:.3s;
-}
-
-.service:hover{
-    transform:translateY(-6px);
-    border-color:rgba(25,211,170,.28);
-}
-
-.service-number{
-    color:var(--accent);
-    font-size:11px;
-    font-weight:800;
-    letter-spacing:1px;
-}
-
-.service-icon{
-    width:50px;
-    height:50px;
-
-    margin:22px 0 18px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:14px;
-
-    background:rgba(25,211,170,.08);
-    border:1px solid rgba(25,211,170,.12);
-
-    font-size:23px;
-}
-
-.service h3{
-    font-size:18px;
-    margin-bottom:8px;
-}
-
-.service p{
-    color:var(--muted);
-    font-size:13px;
-}
-
-
-/* =========================================================
-   PROJECTS
-========================================================= */
-
-.projects{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:22px;
-}
-
-.project{
-    position:relative;
-    overflow:hidden;
-
-    min-height:330px;
-
-    border-radius:24px;
-
-    background:
-        radial-gradient(
-            circle at 85% 15%,
-            rgba(25,211,170,.12),
-            transparent 30%
-        ),
-        var(--card);
-
-    border:1px solid var(--line);
-
-    transition:.3s;
-}
-
-.project:hover{
-    transform:translateY(-5px);
-    border-color:rgba(25,211,170,.3);
-}
-
-.project-top{
-    height:155px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(25,211,170,.13),
-            transparent 62%
-        );
-}
-
-.project-icon{
-    width:72px;
-    height:72px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:20px;
-
-    color:var(--accent);
-    font-size:31px;
-
-    background:rgba(25,211,170,.08);
-    border:1px solid rgba(25,211,170,.22);
-}
-
-.project-body{
-    padding:25px;
-}
-
-.project-type{
-    color:var(--accent);
-    font-size:10px;
-    font-weight:800;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-}
-
-.project-body h3{
-    margin:7px 0 8px;
-    font-size:21px;
-}
-
-.project-body p{
-    color:var(--muted);
-    font-size:13px;
-}
-
-.project-link{
-    display:inline-block;
-    margin-top:18px;
-
-    color:var(--accent);
-
-    font-size:12px;
-    font-weight:750;
-}
-
-
-/* =========================================================
-   TECHDESK
-========================================================= */
-
-.techdesk-box{
-    padding:55px;
-
-    position:relative;
-    overflow:hidden;
-
-    border-radius:28px;
-
-    background:
-        radial-gradient(
-            circle at 85% 15%,
-            rgba(25,211,170,.12),
-            transparent 30%
-        ),
-        linear-gradient(
-            135deg,
-            rgba(25,211,170,.08),
-            rgba(255,255,255,.02)
-        );
-
-    border:1px solid rgba(25,211,170,.17);
-}
-
-.techdesk-box h2{
-    font-size:clamp(35px,6vw,58px);
-    letter-spacing:-2.5px;
-}
-
-.techdesk-box h2 span{
-    color:var(--accent);
-}
-
-.techdesk-box p{
-    max-width:720px;
-    color:var(--muted);
-    margin:15px 0 24px;
-}
-
-.tags{
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-    margin-bottom:27px;
-}
-
-.tag{
-    padding:7px 11px;
-    border-radius:30px;
-
-    background:rgba(255,255,255,.035);
-    border:1px solid var(--line);
-
-    color:#c4cdd4;
-    font-size:11px;
-}
-
-
-/* =========================================================
-   SKILLS
-========================================================= */
-
-.skill-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:15px;
-}
-
-.skill{
-    padding:22px;
-
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:17px;
-}
-
-.skill-head{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:12px;
-}
-
-.skill-name{
-    font-size:13px;
-    font-weight:700;
-}
-
-.skill-type{
-    color:var(--accent);
-    font-size:11px;
-}
-
-.bar{
-    width:100%;
-    height:5px;
-
-    background:rgba(255,255,255,.06);
-    border-radius:20px;
-    overflow:hidden;
-}
-
-.bar span{
-    display:block;
-    height:100%;
-    width:80%;
-
-    background:var(--accent);
-    border-radius:20px;
-}
-
-
-/* =========================================================
-   JOURNEY
-========================================================= */
-
-.journey{
-    max-width:850px;
-}
-
-.journey-item{
-    position:relative;
-
-    padding:0 0 38px 40px;
-}
-
-.journey-item:last-child{
-    padding-bottom:0;
-}
-
-.journey-item:before{
-    content:"";
-
-    position:absolute;
-
-    left:6px;
-    top:7px;
-    bottom:-3px;
-
-    width:1px;
-
-    background:rgba(25,211,170,.25);
-}
-
-.journey-item:last-child:before{
-    display:none;
-}
-
-.journey-dot{
-    position:absolute;
-
-    left:0;
-    top:3px;
-
-    width:13px;
-    height:13px;
-
-    border-radius:50%;
-
-    background:var(--accent);
-    box-shadow:0 0 0 5px rgba(25,211,170,.08);
-}
-
-.journey-year{
-    color:var(--accent);
-    font-size:10px;
-    font-weight:800;
-    letter-spacing:1.5px;
-}
-
-.journey-item h3{
-    font-size:20px;
-    margin:5px 0;
-}
-
-.journey-item p{
-    color:var(--muted);
-    font-size:14px;
-}
-
-
-/* =========================================================
-   CONTENT
-========================================================= */
-
-.content-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
-}
-
-.content-card{
-    padding:32px;
-
-    background:var(--card);
-
-    border:1px solid var(--line);
-    border-radius:22px;
-}
-
-.content-card h3{
-    font-size:21px;
-    margin-bottom:10px;
-}
-
-.content-card p{
-    color:var(--muted);
-    font-size:14px;
-    margin-bottom:20px;
-}
-
-
-/* =========================================================
-   CONTACT
-========================================================= */
-
-.contact-area{
-    text-align:center;
-}
-
-.contact-box{
-    padding:65px 30px;
-
-    border-radius:28px;
-
-    background:
-        radial-gradient(
-            circle at 50% 0%,
-            rgba(25,211,170,.13),
-            transparent 50%
-        ),
-        var(--card);
-
-    border:1px solid var(--line);
-}
-
-.contact-box h2{
-    font-size:clamp(36px,6vw,55px);
-    letter-spacing:-2px;
-}
-
-.contact-box p{
-    max-width:650px;
-    margin:13px auto 25px;
-
-    color:var(--muted);
-}
-
-.socials{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:10px;
-}
-
-.social{
-    padding:10px 16px;
-
-    border-radius:10px;
-
-    border:1px solid var(--line);
-
-    color:#c9d1d7;
-
-    font-size:12px;
-
-    transition:.25s;
-}
-
-.social:hover{
-    color:var(--accent);
-    border-color:rgba(25,211,170,.35);
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer{
-    padding:35px 0;
-
-    border-top:1px solid var(--line);
-}
-
-.footer{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-}
-
-.footer-logo{
-    font-weight:800;
-}
-
-.footer-logo span{
-    color:var(--accent);
-}
-
-.footer-copy{
-    color:#697580;
-    font-size:11px;
-}
-
-
-/* =========================================================
-   ANIMATION
-========================================================= */
-
-.reveal{
-    opacity:0;
-    transform:translateY(25px);
-    transition:.7s ease;
-}
-
-.reveal.show{
-    opacity:1;
-    transform:translateY(0);
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media(max-width:850px){
-
-    .nav-links{
-        display:none;
-
-        position:absolute;
-        top:78px;
-        left:0;
-        right:0;
-
-        padding:22px;
-
-        background:#080d12;
-
-        flex-direction:column;
-        align-items:flex-start;
-
-        border-bottom:1px solid var(--line);
+    function gtag() {
+      dataLayer.push(arguments);
     }
 
-    .nav-links.active{
-        display:flex;
-    }
+    gtag("js", new Date());
+    gtag("config", "G-J15NSN0JDG");
+  </script>
 
-    .menu{
-        display:block;
-    }
-
-    .hero{
-        padding-top:125px;
-    }
-
-    .hero-grid{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-
-    .hero-text{
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .hero-buttons{
-        justify-content:center;
-    }
-
-    .hero-photo{
-        order:-1;
-    }
-
-    .photo-wrap{
-        width:290px;
-        height:350px;
-    }
-
-    .tag-left{
-        left:-10px;
-    }
-
-    .tag-right{
-        right:-10px;
-    }
-
-    .about-grid{
-        grid-template-columns:1fr;
-    }
-
-    .services{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .projects{
-        grid-template-columns:1fr;
-    }
-
-}
-
-@media(max-width:560px){
-
-    section{
-        padding:80px 0;
-    }
-
-    .hero h1{
-        letter-spacing:-2.5px;
-    }
-
-    .services,
-    .skill-grid,
-    .content-grid{
-        grid-template-columns:1fr;
-    }
-
-    .techdesk-box{
-        padding:35px 24px;
-    }
-
-    .about-card{
-        padding:27px;
-    }
-
-    .footer{
-        flex-direction:column;
-        text-align:center;
-    }
-
-}
-
-</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://masumtechdev.github.io/portfolio/#person",
+        "name": "Md Raqibul Islam Masum",
+        "alternateName": "Masum Tech",
+        "url": "https://masumtechdev.github.io/portfolio/",
+        "image": "https://masumtechdev.github.io/portfolio/profile.jpeg",
+        "jobTitle": "Flutter App Developer, Website Designer, Business Software Builder and Technical Support Specialist",
+        "description": "Md Raqibul Islam Masum is the creator of Masum Tech and provides Flutter app development, website design, business software, reporting systems and technical support in Bangladesh.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dhaka",
+          "addressCountry": "Bangladesh"
+        },
+        "email": "mailto:masumtech.dev@gmail.com",
+        "telephone": "+8801820806464",
+        "sameAs": [
+          "https://masumtechdev.github.io/portfolio/",
+          "https://github.com/masumtechdev",
+          "https://facebook.com/farabi1masum",
+          "https://www.linkedin.com/in/md-raqibul-islam-masum-a5b36a201/"
+        ],
+        "knowsAbout": [
+          "Flutter App Development",
+          "Dart",
+          "Firebase",
+          "Android App Development",
+          "Website Design",
+          "Landing Page Design",
+          "POS Sales System",
+          "Business Inventory Software",
+          "Microsoft Excel",
+          "Google Sheets",
+          "Technical Support",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://masumtechdev.github.io/portfolio/#website",
+        "name": "Masum Tech",
+        "alternateName": "Masum Technical Support Bangladesh",
+        "url": "https://masumtechdev.github.io/portfolio/",
+        "publisher": {
+          "@id": "https://masumtechdev.github.io/portfolio/#person"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://masumtechdev.github.io/portfolio/#service",
+        "name": "Masum Tech",
+        "url": "https://masumtechdev.github.io/portfolio/",
+        "image": "https://masumtechdev.github.io/portfolio/profile.jpeg",
+        "description": "Masum Tech provides Flutter app development, website design, POS software, inventory software, Excel and Google Sheet reporting and technical support.",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Bangladesh"
+        },
+        "founder": {
+          "@id": "https://masumtechdev.github.io/portfolio/#person"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://masumtechdev.github.io/portfolio/#masum-smart-calculator-pro",
+        "name": "Masum Smart Calculator Pro",
+        "alternateName": "Masum Calc Pro",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Android",
+        "softwareVersion": "1.0.3+4",
+        "url": "https://play.google.com/store/apps/details?id=com.masum.smartcalculatorpro",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.masum.smartcalculatorpro",
+        "codeRepository": "https://github.com/masumtechdev/masum_calc_pro_v2",
+        "creator": {
+          "@id": "https://masumtechdev.github.io/portfolio/#person"
+        },
+        "description": "Masum Smart Calculator Pro is a Flutter Android calculator and smart utility app for daily calculation, expense tracking, PDF reports, business calculations, Google login and cloud backup."
+      }
+    ]
+  }
+  </script>
 </head>
-
 
 <body>
 
+  <div class="intro-screen" id="introScreen">
+    <div class="intro-grid"></div>
+    <div class="intro-glow intro-glow-one"></div>
+    <div class="intro-glow intro-glow-two"></div>
+
+    <div class="intro-inner">
+      <div class="intro-logo">
+        M
+        <span></span>
+      </div>
+
+      <p>WELCOME TO</p>
+
+      <h1>
+        MASUM <strong>TECH</strong>
+      </h1>
+
+      <div class="intro-bar"></div>
+
+      <h2>Masum Technical Support Bangladesh</h2>
+
+      <small>
+        Apps • Automation • Websites • Business Solutions
+      </small>
+
+      <div class="intro-loading">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="background-grid"></div>
+  <div class="background-glow glow-left"></div>
+  <div class="background-glow glow-right"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <a href="#home" class="brand">
+        <span class="brand-box">M</span>
+
+        <span class="brand-name">
+          Masum <strong>Tech</strong>
+        </span>
+
+        <span class="brand-online"></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+
+        <button
+          class="menu-close"
+          id="menuClose"
+          type="button"
+          aria-label="Close menu"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+
+        <a
+          href="https://wa.me/8801820806464"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mobile-whatsapp"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
+
+      </nav>
+
+      <div class="nav-actions">
+
+        <button
+          class="theme-button"
+          id="themeButton"
+          type="button"
+          aria-label="Change theme"
+        >
+          <i class="fa-solid fa-sun"></i>
+        </button>
+
+        <a href="#contact" class="talk-button">
+          Let's Talk
+        </a>
+
+        <button
+          class="menu-button"
+          id="menuButton"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-<!-- =========================================================
-     NAVIGATION
-========================================================= -->
+      </div>
 
-<header>
+    </div>
+  </header>
 
-<div class="container nav">
+  <div class="nav-overlay" id="navOverlay"></div>
 
-<a href="#home" class="brand">
-Tanvir<span>.</span>
-</a>
+  <main>
 
-<nav class="nav-links" id="navLinks">
+    <section class="hero section-reveal" id="home">
 
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#work">Work</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
+      <div class="hero-content">
 
-<a
-href="https://github.com/Tanvir-Hasan-BD"
-target="_blank"
-class="nav-cta">
-GitHub
-</a>
+        <div class="available-badge">
+          <span></span>
+          Available for Projects & Technical Support
+        </div>
 
-</nav>
+        <p class="eyebrow">
+          MASUM TECHNICAL SUPPORT BANGLADESH
+        </p>
+
+        <h1>
+          Hi, I'm
+
+          <span class="hero-name">
+            <span id="typingName"></span>
+            <b>|</b>
+          </span>
+        </h1>
 
-<div class="menu" id="menu">
-☰
-</div>
+        <h2>
+          Flutter Developer
+          <i>•</i>
+          Spreadsheet Automation
+          <i>•</i>
+          Website Designer
+        </h2>
 
-</div>
+        <p class="hero-description">
+          I design and build practical digital systems for real business
+          operations — Flutter Android apps, advanced Google Sheets and
+          Excel automation, inventory and reconciliation systems,
+          responsive websites and technical support solutions.
+        </p>
 
-</header>
+        <div class="hero-buttons">
 
+          <a href="#projects" class="primary-button">
+            <i class="fa-solid fa-code"></i>
+            View My Work
+          </a>
 
+          <a
+            href="https://wa.me/8801820806464"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="secondary-button"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+          </a>
 
-<!-- =========================================================
-     HERO
-========================================================= -->
+        </div>
 
-<section class="hero" id="home">
+        <div class="hero-meta">
 
-<div class="container hero-grid">
+          <span>
+            <i class="fa-solid fa-location-dot"></i>
+            Dhaka, Bangladesh
+          </span>
 
+          <span>
+            <i class="fa-solid fa-envelope"></i>
+            masumtech.dev@gmail.com
+          </span>
 
-<div class="reveal">
+        </div>
 
-<div class="badge">
-<span class="badge-dot"></span>
-Android App Developer & Tech Creator
-</div>
+      </div>
 
-<h1>
-I build useful<br>
-<span>digital solutions.</span>
-</h1>
+      <div class="hero-photo">
 
-<div class="hero-role">
-Android Apps · Excel · Technology
-</div>
+        <div class="photo-glow"></div>
 
-<p class="hero-text">
-I'm Tanvir Hasan — an Android App Developer, Excel enthusiast
-and Tech Creator focused on building practical applications,
-digital tools and technology content that people can actually use.
-</p>
+        <div class="photo-frame">
+          <img
+            src="masum-suit.jpeg"
+            alt="Md Raqibul Islam Masum"
+            loading="eager"
+          >
+        </div>
 
-<div class="hero-buttons">
+      </div>
 
-<a href="#work" class="btn btn-primary">
-Explore My Work →
-</a>
+    </section>
 
-<a href="#contact" class="btn btn-outline">
-Let's Connect
-</a>
+    <section class="stats section-reveal">
 
-</div>
+      <article>
+        <i class="fa-solid fa-code"></i>
+        <strong>6+</strong>
+        <span>Featured Projects</span>
+      </article>
 
-</div>
+      <article>
+        <i class="fa-solid fa-gears"></i>
+        <strong>Custom</strong>
+        <span>Automation Systems</span>
+      </article>
 
+      <article>
+        <i class="fa-brands fa-google-play"></i>
+        <strong>Live</strong>
+        <span>Google Play App</span>
+      </article>
 
-<div class="hero-photo reveal">
+      <article>
+        <i class="fa-solid fa-headset"></i>
+        <strong>Ready</strong>
+        <span>Technical Support</span>
+      </article>
 
-<div class="photo-wrap">
+    </section>
 
-<div class="photo-glow"></div>
+    <section class="section section-reveal" id="about">
 
-<div class="photo-box">
+      <div class="section-title">
 
-<img
-src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhiSkKXkq58jV3NtsByDkbXH7xdf_nHHHvj5yj-nnEIUN63hbLvmCBsfpNn_DEdIPRKHIm3W1Sja8CSeRqO7K0gRai-Yy479yLA4OsWZerE0B5sp6eeSuScOEYf3vWAab30-wyDSsS-PH9n-qXcXPSbCARrQPKTvDVmZqFA9k1qYDsEpBVL6w40zmFFZEe/s0/F2A54213-3A90-4059-8905-3527DDD8C643.png"
-alt="Tanvir Hasan">
-</div>
+        <span>About Me</span>
 
-<div class="photo-tag tag-left">
-<strong>Android</strong>
-Developer
-</div>
+        <h2>
+          Building practical digital
+          <strong>systems that work.</strong>
+        </h2>
 
-<div class="photo-tag tag-right">
-<strong>Tech</strong>
-Creator
-</div>
+        <p>
+          Development, automation and technical solutions
+          designed around real business requirements.
+        </p>
 
-</div>
+      </div>
 
-</div>
+      <div class="about-grid">
 
-</div>
+        <div class="about-image">
 
-</section>
+          <img
+            src="profile.jpeg"
+            alt="Md Raqibul Islam Masum"
+            loading="lazy"
+          >
 
+          <div class="about-image-label">
 
+            <i class="fa-solid fa-shield-halved"></i>
 
-<!-- =========================================================
-     ABOUT
-========================================================= -->
+            <div>
+              <strong>Masum Tech</strong>
+              <span>Technical Support Bangladesh</span>
+            </div>
 
-<section id="about">
+          </div>
 
-<div class="container">
+        </div>
 
-<div class="section-top reveal">
+        <div class="about-text">
 
-<div class="label">About Me</div>
+          <h3>Md Raqibul Islam Masum</h3>
 
-<h2>Technology, creativity<br>& practical solutions.</h2>
+          <h4>
+            Flutter Developer • Spreadsheet Automation • Web Designer
+          </h4>
 
-<p>
-I enjoy turning ideas into useful digital products and sharing
-technology in a simple and practical way.
-</p>
+          <p>
+            I develop Android applications, professional websites
+            and custom spreadsheet-based business systems.
+          </p>
 
-</div>
+          <p>
+            My spreadsheet work goes beyond basic formatting.
+            I build large Excel and Google Sheets solutions where
+            multiple sheets, formulas, calculations, stock, sales,
+            cash collection, deposits, reconciliation, dashboards
+            and management reports work together automatically.
+          </p>
 
+          <div class="about-features">
 
-<div class="about-grid">
+            <article>
+              <i class="fa-solid fa-code-branch"></i>
 
-<div class="about-card reveal">
+              <div>
+                <strong>Formula + Logic</strong>
+                <span>Connected calculations and business rules.</span>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-table-cells-large"></i>
+
+              <div>
+                <strong>Sheet Automation</strong>
+                <span>Large Excel and Google Sheets workflows.</span>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-mobile-screen-button"></i>
+
+              <div>
+                <strong>Flutter Development</strong>
+                <span>Practical Android applications.</span>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-headset"></i>
+
+              <div>
+                <strong>Technical Support</strong>
+                <span>Practical help for real technical problems.</span>
+              </div>
+            </article>
+
+          </div>
 
-<h3>A little about me</h3>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section section-reveal" id="services">
 
-<p>
-I'm Tanvir Hasan from Bangladesh. My journey in technology
-started with curiosity about computers, software and digital
-tools, which gradually led me into Android app development,
-Excel projects and technology content creation.
-</p>
+      <div class="section-title center">
 
-<br>
+        <span>What I Do</span>
 
-<p>
-Today, I focus on building useful applications and digital
-solutions while continuously learning new technologies.
-</p>
+        <h2>
+          Services built around
+          <strong>real business needs.</strong>
+        </h2>
 
-</div>
+      </div>
+
+      <div class="services-grid">
 
+        <article>
+          <b>01</b>
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <h3>Flutter App Development</h3>
+          <p>
+            Android applications with Firebase,
+            AI integration and practical business features.
+          </p>
+        </article>
 
-<div class="about-card reveal">
+        <article>
+          <b>02</b>
+          <i class="fa-solid fa-table-cells-large"></i>
+          <h3>Spreadsheet Automation</h3>
+          <p>
+            Advanced Excel and Google Sheets systems
+            using formulas and automation logic.
+          </p>
+        </article>
 
-<h3>What drives my work</h3>
+        <article>
+          <b>03</b>
+          <i class="fa-solid fa-boxes-stacked"></i>
+          <h3>Inventory Systems</h3>
+          <p>
+            Stock In, Stock Out, sales, product values,
+            current stock and reconciliation.
+          </p>
+        </article>
 
-<div class="about-list">
+        <article>
+          <b>04</b>
+          <i class="fa-solid fa-chart-column"></i>
+          <h3>Business Reporting</h3>
+          <p>
+            Dashboards, cash collection, deposits,
+            pending amounts and management reports.
+          </p>
+        </article>
 
-<div class="about-item">
-<span>✦</span>
-Simple and useful technology
-</div>
+        <article>
+          <b>05</b>
+          <i class="fa-solid fa-code"></i>
+          <h3>Website Design</h3>
+          <p>
+            Responsive portfolio, business
+            and professional profile websites.
+          </p>
+        </article>
 
-<div class="about-item">
-<span>✦</span>
-Learning through real projects
-</div>
+        <article>
+          <b>06</b>
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h3>Technical Support</h3>
+          <p>
+            Troubleshooting, setup assistance
+            and practical technical guidance.
+          </p>
+        </article>
 
-<div class="about-item">
-<span>✦</span>
-Building practical Android apps
-</div>
+      </div>
 
-<div class="about-item">
-<span>✦</span>
-Creating helpful tech content
-</div>
+    </section>
 
-<div class="about-item">
-<span>✦</span>
-Improving one project at a time
-</div>
+    <section
+      class="section projects-section section-reveal"
+      id="projects"
+    >
 
-</div>
+      <div class="section-title">
 
-</div>
+        <span>Selected Work</span>
 
-</div>
+        <h2>
+          Projects designed to
+          <strong>solve real problems.</strong>
+        </h2>
 
-</div>
+        <p>
+          Spreadsheet automation, business systems,
+          Android applications and professional websites.
+        </p>
 
-</section>
+      </div>
 
+      <div class="project-heading">
 
+        <div>
+          <span>Spreadsheet Automation</span>
+          <h3>Formula, Logic & Business Systems</h3>
+        </div>
 
-<!-- =========================================================
-     SERVICES
-========================================================= -->
+        <p>
+          Connected workflows where data entry,
+          formulas, calculations and reports
+          update automatically.
+        </p>
 
-<section id="services">
+      </div>
 
-<div class="container">
+      <div class="sheet-project-list">
 
-<div class="section-top reveal">
+        <article
+          class="sheet-project project-motion motion-left"
+          data-project-card
+        >
 
-<div class="label">What I Do</div>
+          <div class="sheet-side">
 
-<h2>Things I build<br>and work with.</h2>
+            <div class="sheet-browser">
 
-<p>
-A combination of development, productivity tools and
-technology content.
-</p>
+              <div class="browser-top">
 
-</div>
+                <div class="browser-dots">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
 
+                <span>
+                  Business Operations Dashboard
+                </span>
 
-<div class="services">
+                <b>01</b>
 
+              </div>
 
-<div class="service reveal">
+              <div class="sheet-media">
 
-<div class="service-number">01</div>
+                <img
+                  src="Project-1.png"
+                  alt="Business Operations and Reporting Automation"
+                  loading="lazy"
+                >
 
-<div class="service-icon">📱</div>
+                <span class="sheet-scan"></span>
 
-<h3>Android App Development</h3>
+              </div>
 
-<p>
-Building practical Android applications with Sketchware,
-Java logic and mobile-first thinking.
-</p>
+            </div>
 
-</div>
+            <div class="sheet-workflow">
 
+              <div class="workflow-title">
+                <i class="fa-solid fa-bolt"></i>
+                HOW THIS SYSTEM WORKS
+              </div>
 
-<div class="service reveal">
+              <div class="workflow-track">
 
-<div class="service-number">02</div>
+                <div class="workflow-step step-one">
+                  <i class="fa-solid fa-keyboard"></i>
+                  <small>INPUT</small>
+                  <strong>Daily Data</strong>
+                </div>
 
-<div class="service-icon">🧩</div>
+                <div class="workflow-line line-one">
+                  <span></span>
+                </div>
 
-<h3>Sketchware Development</h3>
+                <div class="workflow-step step-two">
+                  <i class="fa-solid fa-square-root-variable"></i>
+                  <small>LOGIC</small>
+                  <strong>Formulas</strong>
+                </div>
 
-<p>
-Creating Android projects using visual blocks, components,
-activities and custom Java code.
-</p>
+                <div class="workflow-line line-two">
+                  <span></span>
+                </div>
 
-</div>
+                <div class="workflow-step step-three">
+                  <i class="fa-solid fa-calculator"></i>
+                  <small>PROCESS</small>
+                  <strong>Auto Calculate</strong>
+                </div>
 
+                <div class="workflow-line line-three">
+                  <span></span>
+                </div>
 
-<div class="service reveal">
+                <div class="workflow-step step-four">
+                  <i class="fa-solid fa-chart-column"></i>
+                  <small>OUTPUT</small>
+                  <strong>Live Report</strong>
+                </div>
 
-<div class="service-number">03</div>
+              </div>
 
-<div class="service-icon">📊</div>
+              <p>
+                Daily entries automatically flow through formulas
+                and update calculations, pending amounts
+                and management reports.
+              </p>
 
-<h3>Excel Solutions</h3>
+            </div>
 
-<p>
-Creating calculators, dashboards, reports, formulas,
-dropdown systems and practical spreadsheet tools.
-</p>
+          </div>
 
-</div>
+          <div class="sheet-details">
 
+            <small class="status-label">
+              <i></i>
+              CUSTOM-BUILT REPORTING SYSTEM
+            </small>
 
-<div class="service reveal">
+            <h3>
+              Business Operations & Reporting Automation
+            </h3>
 
-<div class="service-number">04</div>
+            <p>
+              A connected Excel and Google Sheets workflow
+              for daily business operations, cash collection,
+              deposits, pending amounts, reconciliation,
+              cost tracking and management summaries.
+            </p>
 
-<div class="service-icon">🌐</div>
+            <div class="project-features">
 
-<h3>Web Projects</h3>
+              <span>
+                <i class="fa-solid fa-money-bill-wave"></i>
+                Cash Collection
+              </span>
 
-<p>
-Creating lightweight websites, Blogger designs and
-personal digital platforms.
-</p>
+              <span>
+                <i class="fa-solid fa-building-columns"></i>
+                Deposits
+              </span>
 
-</div>
+              <span>
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                Pending Amount
+              </span>
 
+              <span>
+                <i class="fa-solid fa-scale-balanced"></i>
+                Reconciliation
+              </span>
 
-<div class="service reveal">
+              <span>
+                <i class="fa-solid fa-chart-column"></i>
+                Dashboard
+              </span>
 
-<div class="service-number">05</div>
+              <span>
+                <i class="fa-solid fa-file-lines"></i>
+                Reports
+              </span>
 
-<div class="service-icon">✍️</div>
+            </div>
 
-<h3>Tech Content</h3>
+            <div class="project-note">
+              <i class="fa-solid fa-code"></i>
+              Custom calculations, advanced formulas
+              and connected business logic.
+            </div>
 
-<p>
-Writing technology tutorials, guides, news and practical
-digital information in simple Bangla.
-</p>
+          </div>
 
-</div>
+        </article>
 
+        <article
+          class="sheet-project sheet-project-reverse project-motion motion-right"
+          data-project-card
+        >
 
-<div class="service reveal">
+          <div class="sheet-side">
 
-<div class="service-number">06</div>
+            <div class="sheet-browser">
 
-<div class="service-icon">💡</div>
+              <div class="browser-top">
 
-<h3>Digital Ideas</h3>
+                <div class="browser-dots">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
 
-<p>
-Turning everyday problems into simple ideas for useful
-apps, tools and technology projects.
-</p>
+                <span>
+                  Inventory Management System
+                </span>
 
-</div>
+                <b>02</b>
 
+              </div>
 
-</div>
+              <div class="sheet-media">
 
-</div>
+                <img
+                  src="Project-2.png"
+                  alt="Inventory and Stock Management Automation"
+                  loading="lazy"
+                >
 
-</section>
+                <span class="sheet-scan"></span>
 
+              </div>
 
+            </div>
 
-<!-- =========================================================
-     SELECTED WORK
-========================================================= -->
+            <div class="sheet-workflow">
 
-<section id="work">
+              <div class="workflow-title">
+                <i class="fa-solid fa-bolt"></i>
+                HOW THIS SYSTEM WORKS
+              </div>
 
-<div class="container">
+              <div class="workflow-track">
 
-<div class="section-top reveal">
+                <div class="workflow-step step-one">
+                  <i class="fa-solid fa-arrow-down"></i>
+                  <small>INPUT</small>
+                  <strong>Stock In</strong>
+                </div>
 
-<div class="label">Selected Work</div>
+                <div class="workflow-line line-one">
+                  <span></span>
+                </div>
 
-<h2>Projects that<br>matter to me.</h2>
+                <div class="workflow-step step-two">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <small>MOVEMENT</small>
+                  <strong>Sales / Out</strong>
+                </div>
 
-<p>
-A selection of Android applications and technology projects
-I've worked on.
-</p>
+                <div class="workflow-line line-two">
+                  <span></span>
+                </div>
 
-</div>
+                <div class="workflow-step step-three">
+                  <i class="fa-solid fa-gears"></i>
+                  <small>ENGINE</small>
+                  <strong>Calculation</strong>
+                </div>
 
+                <div class="workflow-line line-three">
+                  <span></span>
+                </div>
 
-<div class="projects">
+                <div class="workflow-step step-four">
+                  <i class="fa-solid fa-box"></i>
+                  <small>OUTPUT</small>
+                  <strong>Current Stock</strong>
+                </div>
 
+              </div>
 
-<!-- PROJECT 01 -->
+              <p>
+                Stock received and sales movement automatically
+                calculate available quantity, product value
+                and inventory reports.
+              </p>
 
-<div class="project reveal">
+            </div>
 
-<div class="project-top">
+          </div>
 
-<div class="project-icon">
-📅
-</div>
+          <div class="sheet-details">
 
-</div>
+            <small class="status-label">
+              <i></i>
+              INVENTORY & STOCK AUTOMATION
+            </small>
 
-<div class="project-body">
+            <h3>
+              Inventory & Stock Management Automation
+            </h3>
 
-<div class="project-type">
-Android Application
-</div>
+            <p>
+              A structured stock management system for
+              product receive, dispatch, sales movement,
+              current stock, product value and
+              automated inventory reporting.
+            </p>
 
-<h3>Bangla Calendar 2026</h3>
+            <div class="project-features">
 
-<p>
-A Bengali, Arabic and English calendar application with
-monthly calendar views and useful date information.
-</p>
+              <span>
+                <i class="fa-solid fa-arrow-down"></i>
+                Stock In
+              </span>
 
-<a
-href="https://github.com/Tanvir-Hasan-BD/Bangla-Calendar-2026"
-target="_blank"
-class="project-link">
+              <span>
+                <i class="fa-solid fa-arrow-up"></i>
+                Stock Out
+              </span>
 
-View on GitHub →
+              <span>
+                <i class="fa-solid fa-cart-shopping"></i>
+                Sales
+              </span>
 
-</a>
+              <span>
+                <i class="fa-solid fa-box"></i>
+                Current Stock
+              </span>
 
-</div>
+              <span>
+                <i class="fa-solid fa-tags"></i>
+                Product Value
+              </span>
 
-</div>
+              <span>
+                <i class="fa-solid fa-chart-line"></i>
+                Inventory Report
+              </span>
 
+            </div>
 
-<!-- PROJECT 02 -->
+            <div class="project-note">
+              <i class="fa-solid fa-code-branch"></i>
+              Stock movement, quantities and reports
+              remain synchronized automatically.
+            </div>
 
-<div class="project reveal">
+          </div>
 
-<div class="project-top">
+        </article>
 
-<div class="project-icon">
-🧮
-</div>
+        <article
+          class="sheet-project project-motion motion-left"
+          data-project-card
+        >
 
-</div>
+          <div class="sheet-side">
 
-<div class="project-body">
+            <div class="sheet-browser">
 
-<div class="project-type">
-Android Application
-</div>
+              <div class="browser-top">
 
-<h3>Fresh Calculator</h3>
+                <div class="browser-dots">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
 
-<p>
-A practical quantity calculator concept designed for
-calculating food requirements based on manpower.
-</p>
+                <span>
+                  Inventory, Stock & Reconciliation
+                </span>
 
-<a href="#contact" class="project-link">
-Project Details →
-</a>
+                <b>03</b>
 
-</div>
+              </div>
 
-</div>
+              <div class="sheet-media">
 
+                <img
+                  src="inventory-automation-preview.jpg"
+                  alt="Inventory Stock and Reconciliation Automation"
+                  loading="lazy"
+                >
 
-<!-- PROJECT 03 -->
+                <span class="sheet-scan"></span>
 
-<div class="project reveal">
+              </div>
 
-<div class="project-top">
+            </div>
 
-<div class="project-icon">
-📚
-</div>
+            <div class="sheet-workflow">
 
-</div>
+              <div class="workflow-title">
+                <i class="fa-solid fa-bolt"></i>
+                HOW THIS SYSTEM WORKS
+              </div>
 
-<div class="project-body">
+              <div class="workflow-track">
 
-<div class="project-type">
-Android Application
-</div>
+                <div class="workflow-step step-one">
+                  <i class="fa-solid fa-database"></i>
+                  <small>INPUT</small>
+                  <strong>Business Data</strong>
+                </div>
 
-<h3>Kids Learning</h3>
+                <div class="workflow-line line-one">
+                  <span></span>
+                </div>
 
-<p>
-An educational Android application designed to provide
-simple and accessible learning content for children.
-</p>
+                <div class="workflow-step step-two">
+                  <i class="fa-solid fa-code"></i>
+                  <small>ENGINE</small>
+                  <strong>Formula + Code</strong>
+                </div>
 
-<a href="#contact" class="project-link">
-Project Details →
-</a>
+                <div class="workflow-line line-two">
+                  <span></span>
+                </div>
 
-</div>
+                <div class="workflow-step step-three">
+                  <i class="fa-solid fa-scale-balanced"></i>
+                  <small>CHECK</small>
+                  <strong>Reconcile</strong>
+                </div>
 
-</div>
+                <div class="workflow-line line-three">
+                  <span></span>
+                </div>
 
+                <div class="workflow-step step-four">
+                  <i class="fa-solid fa-chart-line"></i>
+                  <small>OUTPUT</small>
+                  <strong>Live Reports</strong>
+                </div>
 
-<!-- PROJECT 04 -->
+              </div>
 
-<div class="project reveal">
+              <p>
+                Operational data passes through formula
+                and code-based logic, reconciles automatically,
+                then updates live management reports.
+              </p>
 
-<div class="project-top">
+            </div>
 
-<div class="project-icon">
-📊
-</div>
+          </div>
 
-</div>
+          <div class="sheet-details">
 
-<div class="project-body">
+            <small class="status-label">
+              <i></i>
+              FORMULA + CODE AUTOMATION WORKFLOW
+            </small>
 
-<div class="project-type">
-Excel Project
-</div>
+            <h3>
+              Inventory, Stock & Reconciliation Automation
+            </h3>
 
-<h3>Training Evaluation Dashboard</h3>
+            <p>
+              A complete spreadsheet-based business system
+              connecting inventory receive and dispatch,
+              sales, product pricing, current stock,
+              cash collection, deposits, pending amounts
+              and reconciliation with dynamic reporting.
+            </p>
 
-<p>
-A structured Excel dashboard concept for recording,
-evaluating and presenting training performance data.
-</p>
+            <div class="project-features">
 
-<a href="#contact" class="project-link">
-View Project →
-</a>
+              <span>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                Stock In / Out
+              </span>
 
-</div>
+              <span>
+                <i class="fa-solid fa-box-open"></i>
+                Live Inventory
+              </span>
 
-</div>
+              <span>
+                <i class="fa-solid fa-tag"></i>
+                Price Tracking
+              </span>
 
+              <span>
+                <i class="fa-solid fa-money-bill-transfer"></i>
+                Cash Reconciliation
+              </span>
 
-</div>
+              <span>
+                <i class="fa-solid fa-chart-simple"></i>
+                Dynamic Reports
+              </span>
 
-</div>
+              <span>
+                <i class="fa-solid fa-code"></i>
+                Automation Logic
+              </span>
 
-</section>
+            </div>
 
+            <div class="project-actions">
 
+              <button
+                type="button"
+                id="automationDemoButton"
+                class="project-primary"
+              >
+                <i class="fa-solid fa-circle-play"></i>
+                Watch Automation Demo
+              </button>
 
-<!-- =========================================================
-     TECHDESKBD
-========================================================= -->
+              <a
+                href="#contact"
+                class="project-secondary"
+              >
+                <i class="fa-solid fa-paper-plane"></i>
+                Discuss a Custom System
+              </a>
 
-<section>
+            </div>
 
-<div class="container">
+          </div>
 
-<div class="techdesk-box reveal" id="techdesk">
+        </article>
 
-<div class="label">
-My Technology Platform
-</div>
+      </div>
 
-<h2>
-Tech<span>DeskBD</span>
-</h2>
+      <div class="project-heading app-heading">
 
-<p>
-TechDeskBD is my technology platform where I publish
-technology news, tutorials, computer information, Android,
-Windows, AI, apps, software and practical digital guides
-in simple Bangla.
-</p>
+        <div>
+          <span>Android Application</span>
+          <h3>HisabFlow 2.0</h3>
+        </div>
 
-<div class="tags">
+        <p>
+          Smart calculations, AI assistance
+          and practical business utilities in one Android app.
+        </p>
 
-<div class="tag">Tech News</div>
-<div class="tag">Android</div>
-<div class="tag">Windows</div>
-<div class="tag">Computer</div>
-<div class="tag">AI</div>
-<div class="tag">Apps</div>
-<div class="tag">Software</div>
-<div class="tag">Tutorials</div>
+      </div>
 
-</div>
+      <article
+        class="hisabflow-card project-motion motion-up"
+        data-project-card
+      >
 
-<a
-href="https://techdeskbd.shop"
-target="_blank"
-class="btn btn-primary">
+        <div class="hisabflow-promo">
 
-Visit TechDeskBD →
+          <div class="hf-grid"></div>
+          <div class="hf-glow"></div>
 
-</a>
+          <div class="hf-brand">
 
-</div>
+            <div class="hf-logo">H</div>
 
-</div>
+            <div>
+              <strong>HisabFlow</strong>
+              <span>Smart Business Utility</span>
+            </div>
 
-</section>
+          </div>
 
+          <div class="hf-copy">
 
+            <small>
+              CALCULATE • MANAGE • ASK AI
+            </small>
 
-<!-- =========================================================
-     SKILLS
-========================================================= -->
+            <h3>
+              Smart Calculator,
+              <strong>AI Assistant</strong>
+              & Business Tools
+            </h3>
 
-<section id="skills">
+            <p>Bangla • English • Banglish</p>
 
-<div class="container">
+          </div>
 
-<div class="section-top reveal">
+          <div class="hf-mini-tags">
 
-<div class="label">Skills</div>
+            <span>
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              AI Assistant
+            </span>
 
-<h2>Tools & technologies<br>I work with.</h2>
+            <span>
+              <i class="fa-solid fa-calculator"></i>
+              Calculator
+            </span>
 
-<p>
-Skills continue to grow through practical projects and
-continuous learning.
-</p>
+            <span>
+              <i class="fa-solid fa-wallet"></i>
+              Expense
+            </span>
 
-</div>
+          </div>
 
+          <div class="hf-phone">
 
-<div class="skill-grid">
+            <div class="hf-speaker"></div>
 
+            <div class="hf-screen">
 
-<div class="skill reveal">
+              <div class="hf-phone-title">
 
-<div class="skill-head">
+                <span>H</span>
 
-<span class="skill-name">
-Android Development
-</span>
+                <div>
+                  <strong>HisabFlow</strong>
+                  <small>Assistant</small>
+                </div>
 
-<span class="skill-type">
-Development
-</span>
+              </div>
 
-</div>
+              <div class="hf-assistant-card">
 
-<div class="bar">
-<span style="width:88%"></span>
-</div>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
 
-</div>
+                <div>
+                  <small>Ask in Bangla, English</small>
+                  <strong>How can I help?</strong>
+                </div>
 
+              </div>
 
-<div class="skill reveal">
+              <div class="hf-tools">
 
-<div class="skill-head">
+                <div>
+                  <i class="fa-solid fa-calculator"></i>
+                  <small>Calculator</small>
+                </div>
 
-<span class="skill-name">
-Sketchware
-</span>
+                <div>
+                  <i class="fa-solid fa-wallet"></i>
+                  <small>Expense</small>
+                </div>
 
-<span class="skill-type">
-Development
-</span>
+                <div>
+                  <i class="fa-solid fa-money-bill-wave"></i>
+                  <small>Cash</small>
+                </div>
 
-</div>
+                <div>
+                  <i class="fa-solid fa-scale-balanced"></i>
+                  <small>Compare</small>
+                </div>
 
-<div class="bar">
-<span style="width:90%"></span>
-</div>
+              </div>
 
-</div>
+            </div>
 
+          </div>
 
-<div class="skill reveal">
+        </div>
 
-<div class="skill-head">
+        <div class="hisabflow-details">
 
-<span class="skill-name">
-Microsoft Excel
-</span>
+          <small class="status-label">
+            <i></i>
+            VERSION 2.0.0 • LIVE ON GOOGLE PLAY
+          </small>
 
-<span class="skill-type">
-Productivity
-</span>
+          <span class="hisabflow-number">04</span>
 
-</div>
+          <h3>HisabFlow</h3>
 
-<div class="bar">
-<span style="width:86%"></span>
-</div>
+          <h4>
+            Smart Calculator, AI Assistant & Business Utility App
+          </h4>
 
-</div>
+          <p>
+            HisabFlow is a Flutter Android application
+            combining calculation tools, AI assistance
+            and everyday business utilities in one app.
+          </p>
 
+          <div class="app-highlight">
 
-<div class="skill reveal">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
 
-<div class="skill-head">
+            <div>
+              <strong>More than a calculator.</strong>
 
-<span class="skill-name">
-HTML & CSS
-</span>
+              <span>
+                AI assistance, finance tools and practical
+                utilities together in one Android application.
+              </span>
+            </div>
 
-<span class="skill-type">
-Web
-</span>
+          </div>
 
-</div>
+          <div class="app-tags">
 
-<div class="bar">
-<span style="width:78%"></span>
-</div>
+            <span>AI Assistant</span>
+            <span>Calculator</span>
+            <span>Daily Expense</span>
+            <span>Cash Counter</span>
+            <span>Best Buy Compare</span>
+            <span>Bill Split</span>
+            <span>Cloud Backup</span>
+            <span>App Lock</span>
 
-</div>
+          </div>
 
+          <div class="built-with">
 
-<div class="skill reveal">
+            <b>BUILT WITH</b>
 
-<div class="skill-head">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>Firebase</span>
+            <span>Gemini AI</span>
 
-<span class="skill-name">
-Blogger
-</span>
+          </div>
 
-<span class="skill-type">
-Web Platform
-</span>
+          <div class="project-actions">
 
-</div>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.masum.smartcalculatorpro"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-primary"
+            >
+              <i class="fa-brands fa-google-play"></i>
+              Google Play
+            </a>
 
-<div class="bar">
-<span style="width:84%"></span>
-</div>
+            <button
+              type="button"
+              id="hisabflowDemoButton"
+              class="project-secondary"
+            >
+              <i class="fa-solid fa-circle-play"></i>
+              Watch Demo
+            </button>
 
-</div>
+            <a
+              href="https://github.com/masumtechdev/masum_calc_pro_v2"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-secondary"
+            >
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </a>
 
+          </div>
 
-<div class="skill reveal">
+        </div>
 
-<div class="skill-head">
+      </article>
 
-<span class="skill-name">
-Technology Content
-</span>
+      <div class="project-heading client-heading">
 
-<span class="skill-type">
-Creator
-</span>
+        <div>
+          <span>Website Projects</span>
+          <h3>Professional Portfolio Websites</h3>
+        </div>
 
-</div>
+        <p>
+          Responsive portfolio websites developed
+          for professional profiles and services.
+        </p>
 
-<div class="bar">
-<span style="width:88%"></span>
-</div>
+      </div>
 
-</div>
+      <div class="portfolio-grid">
 
+        <article
+          class="portfolio-card medical-card portfolio-motion"
+          data-project-card
+        >
 
-</div>
+          <div class="portfolio-browser">
 
-</div>
+            <div class="portfolio-bar">
 
-</section>
+              <div class="browser-dots">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
 
+              <span>muneeba-medicine-center</span>
 
+            </div>
 
-<!-- =========================================================
-     JOURNEY
-========================================================= -->
+            <div class="portfolio-preview">
 
-<section>
+              <div class="preview-orb"></div>
 
-<div class="container">
+              <div class="preview-icon">
+                <i class="fa-solid fa-house-medical"></i>
+              </div>
 
-<div class="section-top reveal">
+              <small>HEALTHCARE PROFILE</small>
+              <strong>Muneeba</strong>
+              <span>Medicine Center</span>
 
-<div class="label">My Journey</div>
+              <div class="preview-lines">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
 
-<h2>Learning by<br>building.</h2>
+            </div>
 
-<p>
-Every project is part of the learning process.
-</p>
+          </div>
 
-</div>
+          <div class="portfolio-content">
 
+            <div class="portfolio-top">
 
-<div class="journey">
+              <div>
+                <small>MEDICAL / HEALTHCARE</small>
+                <h4>Muneeba Medicine Center</h4>
+              </div>
 
+              <b>01</b>
 
-<div class="journey-item reveal">
+            </div>
 
-<div class="journey-dot"></div>
+            <p>
+              Professional healthcare portfolio featuring
+              profile information, services, qualifications,
+              certificates, location and contact options.
+            </p>
 
-<div class="journey-year">
-BEGINNING
-</div>
+            <div class="portfolio-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive</span>
+            </div>
 
-<h3>Started Exploring Technology</h3>
+            <a
+              href="https://masumtechdev.github.io/muneeba-medicine-center/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Live Website
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
 
-<p>
-Started learning computers, software and digital
-technology through curiosity and hands-on exploration.
-</p>
+          </div>
 
-</div>
+        </article>
 
+        <article
+          class="portfolio-card professional-card portfolio-motion"
+          data-project-card
+        >
 
-<div class="journey-item reveal">
+          <div class="portfolio-browser">
 
-<div class="journey-dot"></div>
+            <div class="portfolio-bar">
 
-<div class="journey-year">
-ANDROID
-</div>
+              <div class="browser-dots">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
 
-<h3>Started Building Android Apps</h3>
+              <span>mezbah-uddin-portfolio</span>
 
-<p>
-Explored Sketchware and began turning ideas into
-real Android applications.
-</p>
+            </div>
 
-</div>
+            <div class="portfolio-preview">
 
+              <div class="preview-orb"></div>
 
-<div class="journey-item reveal">
+              <div class="preview-icon">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
 
-<div class="journey-dot"></div>
+              <small>PROFESSIONAL PORTFOLIO</small>
+              <strong>Mezbah</strong>
+              <span>Uddin</span>
 
-<div class="journey-year">
-PROJECTS
-</div>
+              <div class="preview-lines">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
 
-<h3>Real-world Applications</h3>
+            </div>
 
-<p>
-Built projects such as Bangla Calendar 2026,
-Fresh Calculator and Kids Learning.
-</p>
+          </div>
 
-</div>
+          <div class="portfolio-content">
 
+            <div class="portfolio-top">
 
-<div class="journey-item reveal">
+              <div>
+                <small>PROFESSIONAL PORTFOLIO</small>
+                <h4>Mezbah Uddin Portfolio</h4>
+              </div>
 
-<div class="journey-dot"></div>
+              <b>02</b>
 
-<div class="journey-year">
-TODAY
-</div>
+            </div>
 
-<h3>Developer & Tech Creator</h3>
+            <p>
+              Modern professional portfolio designed
+              to present experience, skills, projects
+              and professional information clearly.
+            </p>
 
-<p>
-Building applications, developing TechDeskBD and
-sharing practical technology knowledge.
-</p>
+            <div class="portfolio-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive</span>
+            </div>
 
-</div>
+            <a
+              href="https://masumtechdev.github.io/mezbah-uddin-portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Live Website
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
 
+          </div>
 
-</div>
+        </article>
 
-</div>
+        <article
+          class="portfolio-card personal-card portfolio-motion"
+          data-project-card
+        >
 
-</section>
+          <div class="portfolio-browser">
 
+            <div class="portfolio-bar">
 
+              <div class="browser-dots">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
 
-<!-- =========================================================
-     CONTENT
-========================================================= -->
+              <span>mizanur-rahman-portfolio</span>
 
-<section>
+            </div>
 
-<div class="container">
+            <div class="portfolio-preview">
 
-<div class="section-top reveal">
+              <div class="preview-orb"></div>
 
-<div class="label">Content & Media</div>
+              <div class="preview-icon">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
 
-<h2>Sharing technology<br>in simple ways.</h2>
+              <small>PERSONAL PORTFOLIO</small>
+              <strong>Mizanur</strong>
+              <span>Rahman</span>
 
-</div>
+              <div class="preview-lines">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
 
+            </div>
 
-<div class="content-grid">
+          </div>
 
+          <div class="portfolio-content">
 
-<div class="content-card reveal">
+            <div class="portfolio-top">
 
-<div class="label">
-Tech Platform
-</div>
+              <div>
+                <small>PERSONAL PORTFOLIO</small>
+                <h4>Mizanur Rahman Portfolio</h4>
+              </div>
 
-<h3>TechDeskBD</h3>
+              <b>03</b>
 
-<p>
-Technology news, tutorials, Android, Windows, AI,
-apps, software and computer guides in Bangla.
-</p>
+            </div>
 
-<a
-href="https://techdeskbd.shop"
-target="_blank"
-class="btn btn-outline">
+            <p>
+              Responsive personal portfolio website built
+              to showcase professional identity, background,
+              skills and contact information.
+            </p>
 
-Visit Website →
+            <div class="portfolio-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive</span>
+            </div>
 
-</a>
+            <a
+              href="https://masumtechdev.github.io/mizanur-rahman-portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Live Website
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
 
-</div>
+          </div>
 
+        </article>
 
-<div class="content-card reveal">
+      </div>
 
-<div class="label">
-Video
-</div>
+    </section>
 
-<h3>YouTube</h3>
+    <section
+      class="section skills-section section-reveal"
+      id="skills"
+    >
 
-<p>
-Technology tutorials, Android app development,
-Sketchware, Excel and practical digital guides.
-</p>
+      <div class="section-title center">
 
-<a
-href="https://www.youtube.com/"
-target="_blank"
-class="btn btn-outline">
+        <span>Skills & Journey</span>
 
-YouTube →
+        <h2>
+          Tools, strengths and
+          <strong>current work focus.</strong>
+        </h2>
 
-</a>
+      </div>
 
-</div>
+      <div class="skills-box">
 
+        <div class="skill-tabs">
 
-</div>
+          <button
+            type="button"
+            class="skill-tab active"
+            data-tab="skillsPanel"
+            aria-selected="true"
+          >
+            Skills
+          </button>
 
-</div>
+          <button
+            type="button"
+            class="skill-tab"
+            data-tab="workPanel"
+            aria-selected="false"
+          >
+            Work Focus
+          </button>
 
-</section>
+        </div>
 
+        <div
+          class="skill-panel active"
+          id="skillsPanel"
+        >
 
+          <div class="skills-cloud">
 
-<!-- =========================================================
-     CONTACT
-========================================================= -->
+            <span><i class="fa-solid fa-mobile-screen-button"></i>Flutter</span>
+            <span><i class="fa-solid fa-code"></i>Dart</span>
+            <span><i class="fa-solid fa-fire"></i>Firebase</span>
+            <span><i class="fa-solid fa-wand-magic-sparkles"></i>Gemini AI</span>
+            <span><i class="fa-solid fa-file-excel"></i>Microsoft Excel</span>
+            <span><i class="fa-solid fa-table-cells"></i>Google Sheets</span>
+            <span><i class="fa-solid fa-square-root-variable"></i>Advanced Formulas</span>
+            <span><i class="fa-solid fa-gears"></i>Automation Logic</span>
+            <span><i class="fa-solid fa-boxes-stacked"></i>Inventory Systems</span>
+            <span><i class="fa-solid fa-scale-balanced"></i>Reconciliation</span>
+            <span><i class="fa-solid fa-chart-column"></i>Business Reporting</span>
+            <span><i class="fa-brands fa-html5"></i>HTML</span>
+            <span><i class="fa-brands fa-css3-alt"></i>CSS</span>
+            <span><i class="fa-brands fa-js"></i>JavaScript</span>
+            <span><i class="fa-brands fa-github"></i>GitHub</span>
+            <span><i class="fa-solid fa-headset"></i>Technical Support</span>
 
-<section id="contact" class="contact-area">
+          </div>
 
-<div class="container">
+        </div>
 
-<div class="contact-box reveal">
+        <div
+          class="skill-panel"
+          id="workPanel"
+        >
 
-<div class="label">
-Let's Connect
-</div>
+          <div class="work-timeline">
 
-<h2>
-Have an idea?<br>
-Let's build it.
-</h2>
+            <article>
 
-<p>
-I'm always interested in learning, building useful projects
-and connecting with people who love technology.
-</p>
+              <span></span>
 
+              <div>
+                <small>CURRENT</small>
+                <h3>Masum Technical Support Bangladesh</h3>
 
-<div class="socials">
+                <p>
+                  Flutter applications, spreadsheet automation,
+                  websites, business systems and technical support.
+                </p>
+              </div>
 
-<a
-href="https://github.com/Tanvir-Hasan-BD"
-target="_blank"
-class="social">
+            </article>
 
-GitHub
+            <article>
 
-</a>
+              <span></span>
 
-<a
-href="https://www.facebook.com/TechDeskBD"
-target="_blank"
-class="social">
+              <div>
+                <small>SPREADSHEET AUTOMATION</small>
+                <h3>Large Business Workflows</h3>
 
-Facebook
+                <p>
+                  Formula-driven and code-assisted systems
+                  connecting stock, sales, cash, deposits,
+                  reconciliation and reporting.
+                </p>
+              </div>
 
-</a>
+            </article>
 
-<a
-href="https://techdeskbd.shop"
-target="_blank"
-class="social">
+            <article>
 
-TechDeskBD
+              <span></span>
 
-</a>
+              <div>
+                <small>ANDROID APPLICATION</small>
+                <h3>HisabFlow 2.0</h3>
 
-</div>
+                <p>
+                  Smart calculator, AI assistant
+                  and business utility Android application.
+                </p>
+              </div>
 
-</div>
+            </article>
 
-</div>
+            <article>
 
-</section>
+              <span></span>
 
+              <div>
+                <small>WEB PROJECTS</small>
+                <h3>Professional Portfolio Websites</h3>
 
+                <p>
+                  Responsive portfolio websites for
+                  Muneeba Medicine Center, Mezbah Uddin
+                  and Mizanur Rahman.
+                </p>
+              </div>
 
-<!-- =========================================================
-     FOOTER
-========================================================= -->
+            </article>
 
-<footer>
+          </div>
 
-<div class="container footer">
+        </div>
 
-<div class="footer-logo">
-Tanvir<span>.</span>
-</div>
+      </div>
 
-<div class="footer-copy">
-© <span id="year"></span> Tanvir Hasan. All rights reserved.
-</div>
+    </section>
 
-<div class="footer-copy">
-Built with HTML, CSS & JavaScript.
-</div>
+    <section
+      class="section contact-section section-reveal"
+      id="contact"
+    >
 
-</div>
+      <div class="section-title">
 
-</footer>
+        <span>Contact</span>
 
+        <h2>
+          Have a project or technical
+          <strong>problem to solve?</strong>
+        </h2>
 
+        <p>
+          Contact me for Flutter applications,
+          spreadsheet automation, business systems,
+          websites or technical support.
+        </p>
 
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
+      </div>
 
-<script>
+      <div class="contact-grid">
 
-/* Mobile Menu */
+        <div class="contact-left">
 
-const menu = document.getElementById("menu");
-const navLinks = document.getElementById("navLinks");
+          <div class="availability-card">
 
-menu.addEventListener("click", function(){
+            <span></span>
 
-    navLinks.classList.toggle("active");
+            <div>
+              <strong>Currently Available</strong>
 
-});
+              <p>
+                Open for app development, automation,
+                websites and technical support.
+              </p>
+            </div>
 
+          </div>
 
-/* Close menu */
+          <a
+            href="tel:+8801820806464"
+            class="contact-item"
+          >
 
-document.querySelectorAll(".nav-links a").forEach(function(link){
+            <i class="fa-solid fa-phone"></i>
 
-    link.addEventListener("click",function(){
+            <div>
+              <small>Phone</small>
+              <strong>+880 1820-806464</strong>
+            </div>
 
-        navLinks.classList.remove("active");
+          </a>
 
-    });
+          <a
+            href="mailto:masumtech.dev@gmail.com"
+            class="contact-item"
+          >
 
-});
+            <i class="fa-solid fa-envelope"></i>
 
+            <div>
+              <small>Email</small>
+              <strong>masumtech.dev@gmail.com</strong>
+            </div>
 
-/* Year */
+          </a>
 
-document.getElementById("year").textContent =
-new Date().getFullYear();
+          <div class="contact-item">
 
+            <i class="fa-solid fa-location-dot"></i>
 
-/* Scroll Reveal */
+            <div>
+              <small>Location</small>
+              <strong>Dhaka, Bangladesh</strong>
+            </div>
 
-const observer = new IntersectionObserver(function(entries){
+          </div>
 
-    entries.forEach(function(entry){
+          <div class="social-grid">
 
-        if(entry.isIntersecting){
+            <a
+              href="https://github.com/masumtechdev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </a>
 
-            entry.target.classList.add("show");
+            <a
+              href="https://www.linkedin.com/in/md-raqibul-islam-masum-a5b36a201/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+              LinkedIn
+            </a>
 
-        }
+            <a
+              href="https://facebook.com/farabi1masum"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+              Facebook
+            </a>
 
-    });
+            <a
+              href="https://wa.me/8801820806464"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              WhatsApp
+            </a>
 
-},{
-    threshold:.12
-});
+          </div>
 
+        </div>
 
-document.querySelectorAll(".reveal").forEach(function(element){
+        <div class="contact-form-card">
 
-    observer.observe(element);
+          <div class="form-heading">
 
-});
+            <i class="fa-solid fa-paper-plane"></i>
 
-</script>
+            <div>
+              <h3>Send a Message</h3>
+              <p>Your message will open directly in WhatsApp.</p>
+            </div>
 
+          </div>
+
+          <form id="contactForm">
+
+            <label for="contactName">Name</label>
+
+            <input
+              id="contactName"
+              type="text"
+              placeholder="Your name"
+              required
+            >
+
+            <label for="contactEmail">Email</label>
+
+            <input
+              id="contactEmail"
+              type="email"
+              placeholder="your@email.com"
+              required
+            >
+
+            <label for="contactSubject">Subject</label>
+
+            <input
+              id="contactSubject"
+              type="text"
+              placeholder="Project inquiry"
+              required
+            >
+
+            <label for="contactMessage">Message</label>
+
+            <textarea
+              id="contactMessage"
+              rows="6"
+              placeholder="Tell me about your project..."
+              required
+            ></textarea>
+
+            <button type="submit">
+              <i class="fa-solid fa-paper-plane"></i>
+              Send via WhatsApp
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="footer-main">
+
+      <div>
+        <strong>Md Raqibul Islam Masum</strong>
+        <p>Masum Technical Support Bangladesh</p>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy-policy.html">Privacy</a>
+      </nav>
+
+      <div class="footer-social">
+
+        <a
+          href="https://github.com/masumtechdev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/md-raqibul-islam-masum-a5b36a201/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="year">2026</span> Masum Tech. All rights reserved.
+    </div>
+
+  </footer>
+
+  <div
+    class="video-modal"
+    id="automationModal"
+    aria-hidden="true"
+  >
+
+    <div
+      class="video-backdrop"
+      data-close-modal
+    ></div>
+
+    <div class="video-dialog">
+
+      <div class="video-header">
+
+        <div>
+          <small>AUTOMATION DEMO</small>
+          <h3>Inventory, Stock & Reconciliation System</h3>
+        </div>
+
+        <button
+          type="button"
+          data-close-modal
+          aria-label="Close demo"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+      </div>
+
+      <div class="video-container">
+
+        <video
+          id="automationVideo"
+          controls
+          playsinline
+          preload="none"
+          data-src="inventory-automation-demo.mp4"
+        ></video>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div
+    class="video-modal"
+    id="hisabflowModal"
+    aria-hidden="true"
+  >
+
+    <div
+      class="video-backdrop"
+      data-close-hisabflow
+    ></div>
+
+    <div class="video-dialog hisabflow-dialog">
+
+      <div class="video-header">
+
+        <div>
+          <small>APP DEMO</small>
+          <h3>HisabFlow 2.0</h3>
+        </div>
+
+        <button
+          type="button"
+          data-close-hisabflow
+          aria-label="Close demo"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+      </div>
+
+      <div class="video-container vertical-video">
+
+        <video
+          id="hisabflowVideo"
+          controls
+          playsinline
+          preload="none"
+          data-src="hisabflow-demo.mp4"
+        ></video>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <button
+    class="assistant-button"
+    id="assistantButton"
+    type="button"
+    aria-label="Open Masum Assistant"
+  >
+
+    <span class="assistant-icon">
+      <i class="fa-solid fa-wand-magic-sparkles"></i>
+    </span>
+
+    <span>
+      Ask Masum
+      <small>Assistant</small>
+    </span>
+
+  </button>
+
+  <div
+    class="assistant-panel"
+    id="assistantPanel"
+    aria-hidden="true"
+  >
+
+    <div class="assistant-header">
+
+      <div class="assistant-title">
+
+        <span>
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+        </span>
+
+        <div>
+          <strong>Masum Assistant</strong>
+          <small>Portfolio Guide • Online</small>
+        </div>
+
+      </div>
+
+      <button
+        type="button"
+        id="assistantClose"
+        aria-label="Close assistant"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+    </div>
+
+    <div
+      class="assistant-messages"
+      id="assistantMessages"
+    >
+
+      <div class="assistant-message bot">
+
+        <span class="message-avatar">M</span>
+
+        <div>
+          Hi! 👋 I'm Masum's portfolio assistant.
+          Ask me about Spreadsheet Automation,
+          HisabFlow, websites, services
+          or contact information.
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="assistant-suggestions">
+
+      <button type="button" data-question="automation">
+        Spreadsheet Automation
+      </button>
+
+      <button type="button" data-question="hisabflow">
+        HisabFlow
+      </button>
+
+      <button type="button" data-question="websites">
+        Websites
+      </button>
+
+      <button type="button" data-question="contact">
+        Contact
+      </button>
+
+    </div>
+
+    <form
+      class="assistant-form"
+      id="assistantForm"
+    >
+
+      <input
+        type="text"
+        id="assistantInput"
+        placeholder="Ask about services or projects..."
+        autocomplete="off"
+      >
+
+      <button
+        type="submit"
+        aria-label="Send message"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+
+    </form>
+
+  </div>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/8801820806464"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>Quick Support</span>
+  </a>
+
+  <button
+    class="top-button"
+    id="topButton"
+    type="button"
+    aria-label="Back to top"
+  >
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
