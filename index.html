@@ -1,65 +1,1881 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tanvir Hasan | Portfolio</title>
+<title>Tanvir Hasan | Android App Developer & Tech Creator</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+<meta name="description" content="Tanvir Hasan - Android App Developer, Excel enthusiast and Tech Creator. Explore apps, projects, TechDeskBD and technology work.">
+<meta name="author" content="Tanvir Hasan">
 
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #0b0f14;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
+<style>
 
-        .container {
-            padding: 40px 25px;
-        }
+/* =========================================================
+   ROOT
+========================================================= */
 
-        h1 {
-            font-size: 48px;
-            margin: 0 0 15px;
-        }
+:root{
+    --bg:#070b10;
+    --bg2:#0b1118;
+    --card:#101820;
+    --card2:#0d151d;
+    --text:#f4f7f9;
+    --muted:#9aa7b4;
+    --primary:#00d4aa;
+    --primary2:#00a98c;
+    --border:rgba(255,255,255,.08);
+    --shadow:0 20px 60px rgba(0,0,0,.35);
+    --radius:22px;
+}
 
-        .tagline {
-            font-size: 20px;
-            color: #00d4aa;
-            margin-bottom: 20px;
-        }
 
-        .message {
-            color: #9ca3af;
-            font-size: 16px;
-        }
-    </style>
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+
+    background:
+    radial-gradient(circle at 80% 10%, rgba(0,212,170,.08), transparent 28%),
+    radial-gradient(circle at 10% 40%, rgba(0,212,170,.05), transparent 30%),
+    var(--bg);
+
+    color:var(--text);
+    line-height:1.7;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.container{
+    width:min(1120px,92%);
+    margin:auto;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+
+    background:rgba(7,11,16,.78);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.nav-inner{
+    height:74px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:21px;
+    font-weight:800;
+    letter-spacing:-.5px;
+}
+
+.logo span{
+    color:var(--primary);
+}
+
+.nav-links{
+    display:flex;
+    gap:28px;
+    align-items:center;
+}
+
+.nav-links a{
+    color:#aeb8c2;
+    font-size:14px;
+    transition:.25s;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
+}
+
+.nav-button{
+    padding:10px 17px;
+    border:1px solid rgba(0,212,170,.4);
+    border-radius:30px;
+    color:var(--primary)!important;
+}
+
+.menu-btn{
+    display:none;
+    font-size:25px;
+    cursor:pointer;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    min-height:100vh;
+    padding-top:120px;
+
+    display:flex;
+    align-items:center;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:70px;
+    align-items:center;
+}
+
+.eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    padding:7px 13px;
+    border-radius:30px;
+
+    background:rgba(0,212,170,.08);
+    border:1px solid rgba(0,212,170,.18);
+
+    color:var(--primary);
+    font-size:13px;
+    font-weight:600;
+
+    margin-bottom:22px;
+}
+
+.dot{
+    width:7px;
+    height:7px;
+    background:var(--primary);
+    border-radius:50%;
+    box-shadow:0 0 12px var(--primary);
+}
+
+.hero h1{
+    font-size:clamp(45px,7vw,78px);
+    line-height:1.02;
+    letter-spacing:-3px;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:var(--primary);
+}
+
+.hero-subtitle{
+    color:#c2ccd4;
+    font-size:21px;
+    margin-bottom:18px;
+}
+
+.hero-description{
+    color:var(--muted);
+    font-size:16px;
+    max-width:620px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:13px;
+    flex-wrap:wrap;
+    margin-top:32px;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:13px 21px;
+    border-radius:12px;
+
+    font-size:14px;
+    font-weight:700;
+
+    transition:.25s;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:#06110e;
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+    background:#11e1b7;
+    box-shadow:0 12px 30px rgba(0,212,170,.18);
+}
+
+.btn-outline{
+    border:1px solid var(--border);
+    background:rgba(255,255,255,.025);
+    color:#dce4ea;
+}
+
+.btn-outline:hover{
+    border-color:rgba(0,212,170,.4);
+    color:var(--primary);
+}
+
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.hero-visual{
+    display:flex;
+    justify-content:center;
+}
+
+.profile-wrap{
+    position:relative;
+    width:330px;
+    height:390px;
+}
+
+.profile-card{
+    position:absolute;
+    inset:20px;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(145deg,
+    rgba(0,212,170,.14),
+    rgba(255,255,255,.025));
+
+    border:1px solid rgba(0,212,170,.18);
+
+    box-shadow:var(--shadow);
+
+    overflow:hidden;
+}
+
+.profile-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.profile-glow{
+    position:absolute;
+    width:190px;
+    height:190px;
+
+    background:var(--primary);
+    filter:blur(100px);
+    opacity:.15;
+
+    right:-40px;
+    bottom:-40px;
+}
+
+.floating-card{
+    position:absolute;
+    padding:13px 16px;
+
+    background:rgba(13,21,29,.9);
+    border:1px solid var(--border);
+    border-radius:14px;
+
+    box-shadow:var(--shadow);
+
+    font-size:13px;
+    color:#cbd5dc;
+}
+
+.floating-card strong{
+    display:block;
+    color:var(--primary);
+    font-size:17px;
+}
+
+.float-one{
+    left:-20px;
+    top:65px;
+}
+
+.float-two{
+    right:-20px;
+    bottom:65px;
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+section{
+    padding:105px 0;
+}
+
+.section-heading{
+    margin-bottom:45px;
+}
+
+.section-label{
+    color:var(--primary);
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:12px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.section-heading h2{
+    font-size:clamp(31px,5vw,46px);
+    letter-spacing:-1.5px;
+    line-height:1.15;
+}
+
+.section-heading p{
+    color:var(--muted);
+    max-width:650px;
+    margin-top:12px;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.card{
+    background:
+    linear-gradient(145deg,
+    rgba(255,255,255,.035),
+    rgba(255,255,255,.015));
+
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+
+    padding:30px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.15);
+}
+
+.card h3{
+    font-size:20px;
+    margin-bottom:13px;
+}
+
+.card p{
+    color:var(--muted);
+    font-size:15px;
+}
+
+.about-highlight{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
+
+.stat{
+    padding:18px;
+    border-radius:15px;
+    background:rgba(255,255,255,.025);
+    border:1px solid var(--border);
+}
+
+.stat strong{
+    display:block;
+    color:var(--primary);
+    font-size:25px;
+}
+
+.stat span{
+    color:var(--muted);
+    font-size:12px;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.skill-card{
+    padding:26px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+    border-color:rgba(0,212,170,.28);
+}
+
+.skill-icon{
+    width:48px;
+    height:48px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:13px;
+
+    background:rgba(0,212,170,.09);
+    color:var(--primary);
+
+    font-size:22px;
+
+    margin-bottom:18px;
+}
+
+.skill-card h3{
+    margin-bottom:7px;
+}
+
+.skill-card p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+
+/* =========================================================
+   JOURNEY
+========================================================= */
+
+.timeline{
+    position:relative;
+    max-width:850px;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:9px;
+    top:5px;
+    bottom:5px;
+    width:1px;
+    background:rgba(0,212,170,.25);
+}
+
+.timeline-item{
+    position:relative;
+    padding-left:42px;
+    margin-bottom:38px;
+}
+
+.timeline-dot{
+    position:absolute;
+    left:3px;
+    top:7px;
+
+    width:13px;
+    height:13px;
+
+    border-radius:50%;
+    background:var(--primary);
+
+    box-shadow:0 0 0 5px rgba(0,212,170,.09);
+}
+
+.timeline-year{
+    color:var(--primary);
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+.timeline-item h3{
+    font-size:20px;
+    margin:4px 0 5px;
+}
+
+.timeline-item p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.project-card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:22px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(0,212,170,.3);
+}
+
+.project-top{
+    height:175px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:
+    radial-gradient(circle at center,
+    rgba(0,212,170,.18),
+    transparent 60%),
+    #0b1219;
+}
+
+.app-icon{
+    width:76px;
+    height:76px;
+
+    border-radius:21px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(0,212,170,.1);
+    border:1px solid rgba(0,212,170,.25);
+
+    color:var(--primary);
+    font-size:35px;
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project-content h3{
+    font-size:19px;
+    margin-bottom:8px;
+}
+
+.project-content p{
+    color:var(--muted);
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.project-link{
+    color:var(--primary);
+    font-size:13px;
+    font-weight:700;
+}
+
+
+/* =========================================================
+   TECHDESK
+========================================================= */
+
+.techdesk{
+    position:relative;
+    overflow:hidden;
+
+    background:
+    linear-gradient(135deg,
+    rgba(0,212,170,.11),
+    rgba(255,255,255,.025));
+
+    border:1px solid rgba(0,212,170,.16);
+    border-radius:28px;
+
+    padding:50px;
+}
+
+.techdesk::after{
+    content:"";
+    position:absolute;
+    width:280px;
+    height:280px;
+
+    right:-100px;
+    top:-100px;
+
+    border-radius:50%;
+    background:var(--primary);
+    opacity:.06;
+    filter:blur(10px);
+}
+
+.techdesk h2{
+    font-size:clamp(30px,5vw,48px);
+    letter-spacing:-1.5px;
+}
+
+.techdesk h2 span{
+    color:var(--primary);
+}
+
+.techdesk p{
+    color:var(--muted);
+    max-width:700px;
+    margin:15px 0 25px;
+}
+
+.tech-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:9px;
+    margin-bottom:25px;
+}
+
+.tech-tag{
+    padding:7px 12px;
+    border-radius:30px;
+    background:rgba(255,255,255,.04);
+    border:1px solid var(--border);
+    color:#cbd5dc;
+    font-size:12px;
+}
+
+
+/* =========================================================
+   EXCEL
+========================================================= */
+
+.excel-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.excel-card{
+    padding:28px;
+
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:20px;
+}
+
+.excel-number{
+    color:var(--primary);
+    font-size:13px;
+    font-weight:800;
+}
+
+.excel-card h3{
+    margin:7px 0;
+}
+
+.excel-card p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.content-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.content-box{
+    padding:35px;
+
+    border-radius:22px;
+
+    background:var(--card);
+    border:1px solid var(--border);
+}
+
+.content-box h3{
+    font-size:23px;
+    margin-bottom:10px;
+}
+
+.content-box p{
+    color:var(--muted);
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    max-width:800px;
+    margin:auto;
+
+    padding:55px 30px;
+
+    border-radius:28px;
+
+    background:
+    radial-gradient(circle at 50% 0%,
+    rgba(0,212,170,.12),
+    transparent 50%),
+    var(--card);
+
+    border:1px solid var(--border);
+}
+
+.contact-box h2{
+    font-size:clamp(32px,5vw,48px);
+    letter-spacing:-1.5px;
+}
+
+.contact-box p{
+    max-width:600px;
+    margin:14px auto 25px;
+    color:var(--muted);
+}
+
+.socials{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.social{
+    padding:10px 15px;
+    border:1px solid var(--border);
+    border-radius:10px;
+    color:#cbd5dc;
+    font-size:13px;
+    transition:.25s;
+}
+
+.social:hover{
+    color:var(--primary);
+    border-color:rgba(0,212,170,.3);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    padding:35px 0;
+    border-top:1px solid var(--border);
+}
+
+.footer-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.footer-logo{
+    font-weight:800;
+}
+
+.footer-logo span{
+    color:var(--primary);
+}
+
+.footer-text{
+    color:#77838d;
+    font-size:12px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:850px){
+
+    .nav-links{
+        display:none;
+
+        position:absolute;
+        top:74px;
+        left:0;
+        right:0;
+
+        padding:20px;
+
+        flex-direction:column;
+        align-items:flex-start;
+
+        background:#080d12;
+        border-bottom:1px solid var(--border);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .hero{
+        padding-top:120px;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:50px;
+    }
+
+    .hero-description{
+        margin:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-visual{
+        order:-1;
+    }
+
+    .profile-wrap{
+        width:270px;
+        height:330px;
+    }
+
+    .float-one{
+        left:-10px;
+    }
+
+    .float-two{
+        right:-10px;
+    }
+
+    .about-grid,
+    .content-grid,
+    .excel-grid{
+        grid-template-columns:1fr;
+    }
+
+    .skills-grid,
+    .projects-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:560px){
+
+    section{
+        padding:80px 0;
+    }
+
+    .hero h1{
+        letter-spacing:-2px;
+    }
+
+    .skills-grid,
+    .projects-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-highlight{
+        grid-template-columns:1fr;
+    }
+
+    .techdesk{
+        padding:30px 22px;
+    }
+
+    .card{
+        padding:25px;
+    }
+
+    .footer-inner{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+
+/* =========================================================
+   REVEAL ANIMATION
+========================================================= */
+
+.reveal{
+    opacity:0;
+    transform:translateY(25px);
+    transition:
+    opacity .7s ease,
+    transform .7s ease;
+}
+
+.reveal.show{
+    opacity:1;
+    transform:none;
+}
+
+</style>
 </head>
+
 
 <body>
 
-    <div class="container">
 
-        <h1>Tanvir Hasan</h1>
+<!-- =======================================================
+     NAVIGATION
+======================================================= -->
 
-        <div class="tagline">
-            Android App Developer | Excel | Tech Creator
-        </div>
+<header class="navbar">
 
-        <div class="message">
-            My Portfolio Website is Working!
-        </div>
+<div class="container nav-inner">
 
-    </div>
+<a href="#home" class="logo">
+Tanvir<span>.</span>
+</a>
+
+<nav class="nav-links" id="navLinks">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#techdesk">TechDeskBD</a>
+<a href="#contact">Contact</a>
+
+<a
+href="https://github.com/Tanvir-Hasan-BD"
+target="_blank"
+class="nav-button">
+GitHub
+</a>
+
+</nav>
+
+<div class="menu-btn" id="menuBtn">
+☰
+</div>
+
+</div>
+
+</header>
+
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+<div class="hero-content reveal">
+
+<div class="eyebrow">
+<span class="dot"></span>
+Available for Creative Tech Projects
+</div>
+
+<h1>
+Building Ideas<br>
+Into <span>Technology.</span>
+</h1>
+
+<div class="hero-subtitle">
+Android App Developer · Excel · Tech Creator
+</div>
+
+<p class="hero-description">
+I create useful Android applications, practical Excel solutions
+and technology content designed to make everyday digital tasks
+simpler and easier.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn btn-primary">
+Explore My Work
+</a>
+
+<a href="#contact" class="btn btn-outline">
+Let's Connect
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-visual reveal">
+
+<div class="profile-wrap">
+
+<div class="profile-glow"></div>
+
+<div class="profile-card">
+
+<img
+src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhiSkKXkq58jV3NtsByDkbXH7xdf_nHHHvj5yj-nnEIUN63hbLvmCBsfpNn_DEdIPRKHIm3W1Sja8CSeRqO7K0gRai-Yy479yLA4OsWZerE0B5sp6eeSuScOEYf3vWAab30-wyDSsS-PH9n-qXcXPSbCARrQPKTvDVmZqFA9k1qYDsEpBVL6w40zmFFZEe/s0/F2A54213-3A90-4059-8905-3527DDD8C643.png"
+alt="Tanvir Hasan">
+</div>
+
+<div class="floating-card float-one">
+<strong>Android</strong>
+App Development
+</div>
+
+<div class="floating-card float-two">
+<strong>Tech</strong>
+Content Creator
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     ABOUT
+======================================================= -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-heading reveal">
+
+<div class="section-label">About Me</div>
+
+<h2>Technology with a<br>practical purpose.</h2>
+
+<p>
+I enjoy learning technology, building useful digital tools
+and sharing what I learn with others.
+</p>
+
+</div>
+
+
+<div class="about-grid">
+
+<div class="card reveal">
+
+<h3>Who I Am</h3>
+
+<p>
+I'm Tanvir Hasan, an Android App Developer and technology
+enthusiast from Bangladesh. My work focuses on creating
+simple, useful and practical digital solutions.
+</p>
+
+<br>
+
+<p>
+I work with Android app development, Sketchware, Microsoft
+Excel and technology content creation. I believe technology
+should be understandable and useful for everyone.
+</p>
+
+</div>
+
+
+<div class="card reveal">
+
+<h3>What I Do</h3>
+
+<p>
+I build Android applications, create Excel-based tools,
+write technology tutorials and develop TechDeskBD as a
+technology-focused platform.
+</p>
+
+<div class="about-highlight">
+
+<div class="stat">
+<strong>Apps</strong>
+<span>Android Projects</span>
+</div>
+
+<div class="stat">
+<strong>Excel</strong>
+<span>Practical Solutions</span>
+</div>
+
+<div class="stat">
+<strong>Tech</strong>
+<span>Content & Tutorials</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     SKILLS
+======================================================= -->
+
+<section id="skills">
+
+<div class="container">
+
+<div class="section-heading reveal">
+
+<div class="section-label">Skills</div>
+
+<h2>Things I love<br>working with.</h2>
+
+<p>
+A practical combination of development, productivity
+and technology content creation.
+</p>
+
+</div>
+
+
+<div class="skills-grid">
+
+<div class="skill-card reveal">
+
+<div class="skill-icon">📱</div>
+
+<h3>Android Development</h3>
+
+<p>
+Android app development with Sketchware and practical
+mobile application projects.
+</p>
+
+</div>
+
+
+<div class="skill-card reveal">
+
+<div class="skill-icon">⚡</div>
+
+<h3>Sketchware</h3>
+
+<p>
+Building Android applications using visual blocks,
+Java logic and practical project structures.
+</p>
+
+</div>
+
+
+<div class="skill-card reveal">
+
+<div class="skill-icon">📊</div>
+
+<h3>Microsoft Excel</h3>
+
+<p>
+Formulas, dashboards, calculators, automation ideas
+and practical Excel-based tools.
+</p>
+
+</div>
+
+
+<div class="skill-card reveal">
+
+<div class="skill-icon">💻</div>
+
+<h3>Technology</h3>
+
+<p>
+Tech news, tutorials, computer hardware, Windows,
+Android and useful digital information.
+</p>
+
+</div>
+
+
+<div class="skill-card reveal">
+
+<div class="skill-icon">✍️</div>
+
+<h3>Content Creation</h3>
+
+<p>
+Writing practical technology content and creating
+educational digital resources.
+</p>
+
+</div>
+
+
+<div class="skill-card reveal">
+
+<div class="skill-icon">🎨</div>
+
+<h3>Creative Projects</h3>
+
+<p>
+Combining technology, design and practical ideas
+to create useful digital experiences.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     JOURNEY
+======================================================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-heading reveal">
+
+<div class="section-label">Journey</div>
+
+<h2>Learning, building<br>and improving.</h2>
+
+</div>
+
+
+<div class="timeline">
+
+<div class="timeline-item reveal">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-year">START</div>
+
+<h3>Started Exploring Technology</h3>
+
+<p>
+Started learning computers, software and digital
+technology with curiosity and practical experimentation.
+</p>
+
+</div>
+
+
+<div class="timeline-item reveal">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-year">ANDROID</div>
+
+<h3>Started Building Android Apps</h3>
+
+<p>
+Explored Sketchware and gradually started building
+real-world Android applications.
+</p>
+
+</div>
+
+
+<div class="timeline-item reveal">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-year">PROJECTS</div>
+
+<h3>Built Practical Applications</h3>
+
+<p>
+Created applications including Bangla Calendar 2026,
+Fresh Calculator and Kids Learning.
+</p>
+
+</div>
+
+
+<div class="timeline-item reveal">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-year">TODAY</div>
+
+<h3>Tech Creator & Developer</h3>
+
+<p>
+Continuing to build applications, create technology
+content and develop TechDeskBD.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     PROJECTS
+======================================================= -->
+
+<section id="projects">
+
+<div class="container">
+
+<div class="section-heading reveal">
+
+<div class="section-label">Android Projects</div>
+
+<h2>Apps I've<br>worked on.</h2>
+
+<p>
+Some of my Android application projects and experiments.
+</p>
+
+</div>
+
+
+<div class="projects-grid">
+
+
+<div class="project-card reveal">
+
+<div class="project-top">
+
+<div class="app-icon">
+📅
+</div>
+
+</div>
+
+<div class="project-content">
+
+<h3>Bangla Calendar 2026</h3>
+
+<p>
+A Bengali, Arabic and English calendar application
+with monthly calendar views and useful date information.
+</p>
+
+<a
+href="https://github.com/Tanvir-Hasan-BD/Bangla-Calendar-2026"
+target="_blank"
+class="project-link">
+
+View Project →
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="project-card reveal">
+
+<div class="project-top">
+
+<div class="app-icon">
+🧮
+</div>
+
+</div>
+
+<div class="project-content">
+
+<h3>Fresh Calculator</h3>
+
+<p>
+A practical calculator concept designed to calculate
+fresh-food quantities based on people and requirements.
+</p>
+
+<a href="#contact" class="project-link">
+Project Details →
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="project-card reveal">
+
+<div class="project-top">
+
+<div class="app-icon">
+📚
+</div>
+
+</div>
+
+<div class="project-content">
+
+<h3>Kids Learning</h3>
+
+<p>
+An educational Android application designed to provide
+simple learning content for children.
+</p>
+
+<a href="#contact" class="project-link">
+Project Details →
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     TECHDESKBD
+======================================================= -->
+
+<section id="techdesk">
+
+<div class="container">
+
+<div class="techdesk reveal">
+
+<div class="section-label">
+MY TECHNOLOGY PLATFORM
+</div>
+
+<h2>
+Welcome to <span>TechDeskBD</span>
+</h2>
+
+<p>
+TechDeskBD is my technology-focused platform where I share
+technology news, tutorials, computer information, Android,
+Windows, AI, apps, software and practical digital guides
+in simple Bangla.
+</p>
+
+<div class="tech-tags">
+
+<span class="tech-tag">Tech News</span>
+<span class="tech-tag">Android</span>
+<span class="tech-tag">Windows</span>
+<span class="tech-tag">Computer</span>
+<span class="tech-tag">AI</span>
+<span class="tech-tag">Apps</span>
+<span class="tech-tag">Software</span>
+<span class="tech-tag">Tutorials</span>
+
+</div>
+
+<a
+href="https://techdeskbd.shop"
+target="_blank"
+class="btn btn-primary">
+
+Visit TechDeskBD →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     EXCEL PROJECTS
+======================================================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-heading reveal">
+
+<div class="section-label">Excel Projects</div>
+
+<h2>Turning data into<br>useful tools.</h2>
+
+<p>
+I enjoy using Microsoft Excel to build practical
+calculators, dashboards and work-related solutions.
+</p>
+
+</div>
+
+
+<div class="excel-grid">
+
+<div class="excel-card reveal">
+
+<div class="excel-number">01 / EXCEL</div>
+
+<h3>Training Evaluation Dashboard</h3>
+
+<p>
+A practical dashboard concept for evaluating training
+skills and task performance using ratings and structured data.
+</p>
+
+</div>
+
+
+<div class="excel-card reveal">
+
+<div class="excel-number">02 / EXCEL</div>
+
+<h3>Pay Fixation Calculator</h3>
+
+<p>
+A structured Excel-based calculator concept for working
+with Bangladesh national pay scale calculations.
+</p>
+
+</div>
+
+
+<div class="excel-card reveal">
+
+<div class="excel-number">03 / EXCEL</div>
+
+<h3>Data & Reporting Tools</h3>
+
+<p>
+Practical spreadsheet solutions using formulas,
+tables, dropdowns and automated calculations.
+</p>
+
+</div>
+
+
+<div class="excel-card reveal">
+
+<div class="excel-number">04 / EXCEL</div>
+
+<h3>Excel Learning Content</h3>
+
+<p>
+Creating beginner-friendly tutorials covering formulas,
+shortcuts, functions and practical spreadsheet techniques.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     CONTENT
+======================================================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-heading reveal">
+
+<div class="section-label">Content Creation</div>
+
+<h2>Sharing what<br>I learn.</h2>
+
+</div>
+
+
+<div class="content-grid">
+
+<div class="content-box reveal">
+
+<h3>📝 TechDeskBD</h3>
+
+<p>
+Technology articles, tutorials, guides and useful
+information written in simple Bangla.
+</p>
+
+<a
+href="https://techdeskbd.shop"
+target="_blank"
+class="btn btn-outline">
+
+Read TechDeskBD →
+
+</a>
+
+</div>
+
+
+<div class="content-box reveal">
+
+<h3>▶️ YouTube</h3>
+
+<p>
+Technology tutorials, Android app development,
+Sketchware, Excel and practical digital guides.
+</p>
+
+<a href="#contact" class="btn btn-outline">
+YouTube Coming Soon
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     CONTACT
+======================================================= -->
+
+<section id="contact" class="contact">
+
+<div class="container">
+
+<div class="contact-box reveal">
+
+<div class="section-label">
+CONTACT
+</div>
+
+<h2>
+Let's build something useful.
+</h2>
+
+<p>
+Have an idea, project or technology-related discussion?
+Feel free to connect with me through my public profiles.
+</p>
+
+
+<div class="socials">
+
+<a
+href="https://github.com/Tanvir-Hasan-BD"
+target="_blank"
+class="social">
+
+GitHub
+
+</a>
+
+
+<a
+href="https://www.facebook.com/TechDeskBD"
+target="_blank"
+class="social">
+
+Facebook
+
+</a>
+
+
+<a
+href="https://techdeskbd.shop"
+target="_blank"
+class="social">
+
+TechDeskBD
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+<div class="container footer-inner">
+
+<div class="footer-logo">
+Tanvir<span>.</span>
+</div>
+
+<div class="footer-text">
+© <span id="year"></span> Tanvir Hasan. All rights reserved.
+</div>
+
+<div class="footer-text">
+Built with HTML, CSS & JavaScript.
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+
+<script>
+
+/* Mobile Menu */
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function(){
+
+    navLinks.classList.toggle("active");
+
+});
+
+
+/* Close Mobile Menu */
+
+document.querySelectorAll(".nav-links a").forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
+
+
+/* Current Year */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+/* Scroll Reveal */
+
+const observer = new IntersectionObserver(
+
+function(entries){
+
+    entries.forEach(function(entry){
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+},
+
+{
+    threshold:0.12
+}
+
+);
+
+
+document.querySelectorAll(".reveal").forEach(function(element){
+
+    observer.observe(element);
+
+});
+
+</script>
+
 
 </body>
 </html>
